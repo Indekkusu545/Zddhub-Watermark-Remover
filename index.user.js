@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zddhub Watermark Remover
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.1.0
 // @description  去除zddhub的水印
 // @author       Indekkusu
 // @license      MIT
@@ -13,8 +13,9 @@
 (function () {
   "use strict";
 
-  GM_addStyle(`#eb-watermark {
-    z-index: -1;
+  GM_addStyle(`#root {
+    position: relative;
+    z-index: 1;
   }`);
 
 })();
